@@ -143,3 +143,20 @@ still be compilable with cmake and make./
 ## How to write a README
 A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
 
+---
+
+
+## Model Documentation
+
+The starting point of the implementation of this project was Mr Aaron Brown's 
+code presented in the Project Q&A video. This code allows to drive smoothly in 
+the lane and slow down if a car is present in front of the ego car. This code uses 
+spline in order to generate smooth transtions between trajectory points. On top of 
+this code I added a lane change logic. It allows the ego car to change lane if the 
+leading car drives too slow. In order to perform lane change, we need to check if 
+one of the adjacent lanes is clear from traffic. For my implementation, the code 
+checks if there is no traffic in a distance of 40m in front and behind ego car in 
+order to perform lane change safely.
+Further improvements of this implementations could involve adding an intelligent speed 
+adaptation to leading cars instead of substracting a hard value from car's speed.
+
